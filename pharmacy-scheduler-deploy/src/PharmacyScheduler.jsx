@@ -4,7 +4,7 @@ import * as XLSX from "xlsx";
 /* ═══════════════════════════════════════════════════════════════════════════
    CONSTANTS
    ═══════════════════════════════════════════════════════════════════════════ */
-const PX_PER_HOUR = 120;
+const PX_PER_HOUR = 60;
 const LANE_H = 40;
 const ROW_PAD = 6;
 const MIN_ROW_H = LANE_H + ROW_PAD * 2;
