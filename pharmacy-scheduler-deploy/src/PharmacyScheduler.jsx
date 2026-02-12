@@ -803,7 +803,7 @@ export default function PharmacyScheduler() {
                   {ticks.map(({ m, isHour }) => (
                     <div key={m} style={{ position: "absolute", left: minToPx(m), bottom: 0, display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
                       <span style={{ fontSize: isHour ? 12 : 10, fontWeight: isHour ? 600 : 400, color: isHour ? "#475569" : "#b0b8c4", paddingLeft: 4, paddingBottom: 5, whiteSpace: "nowrap", userSelect: "none" }}>
-
+                        {fmtTime(m)}
                       </span>
                       <div style={{ width: 1, height: isHour ? 8 : 4, background: isHour ? "#94a3b8" : "#cbd5e1" }} />
                     </div>
