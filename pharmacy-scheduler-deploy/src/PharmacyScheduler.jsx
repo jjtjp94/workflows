@@ -4,7 +4,7 @@ import * as XLSX from "xlsx";
 /* ═══════════════════════════════════════════════════════════════════════════
    CONSTANTS
    ═══════════════════════════════════════════════════════════════════════════ */
-const PX_PER_HOUR = 60;
+const PX_PER_HOUR = 90;
 const LANE_H = 40;
 const ROW_PAD = 6;
 const MIN_ROW_H = LANE_H + ROW_PAD * 2;
@@ -31,7 +31,6 @@ const fmtTimeFull = (m) => {
   const mm = Math.floor(m % 60);
   const ap = h >= 12 ? "PM" : "AM";
   const h12 = h === 0 ? 12 : h > 12 ? h - 12 : h;
-  return `${h12}:${String(mm).padStart(2, "0")} ${ap}`;
 };
 const fmtDur = (m) => {
   if (m < 60) return `${m}m`;
