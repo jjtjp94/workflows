@@ -56,23 +56,24 @@ const INIT_TYPES = [
   { id: "t2", name: "TCT", color: "#8b5cf6", dur: 60 },
   { id: "t3", name: "Pyxis Pull", color: "#06b6d4", dur: 60 },
   { id: "t4", name: "Triage", color: "#f59e0b", dur: 60 },
-  { id: "t5", name: "IV Room", color: "#10b981", dur: 120 },
-  { id: "t6", name: "Chemo", color: "#ef4444", dur: 90 },
-  { id: "t7", name: "Pending Queue", color: "#ec4899", dur: 60 },
-  { id: "t8", name: "Lunch", color: "#6b7280", dur: 30 },
-  { id: "t9", name: "Break", color: "#9ca3af", dur: 15 },
-  { id: "t10", name: "Training", color: "#a855f7", dur: 60 },
-  { id: "t11", name: "Order Entry", color: "#0ea5e9", dur: 60 },
-  { id: "t12", name: "Controlled Substance", color: "#dc2626", dur: 60 },
+  { id: "t5", name: "Pyxis Refills", color: "#10b981", dur: 120 },
+  { id: "t6", name: "Returns", color: "#ef4444", dur: 60 },
+  { id: "t7", name: "Receive Orders", color: "#ec4899", dur: 60 },
+  { id: "t8", name: "Lunch", color: "#6b7280", dur: 45 },
+  { id: "t9", name: "Cycle Count", color: "#9ca3af", dur: 30 },
+  { id: "t10", name: "Kitcheck", color: "#a855f7", dur: 30 },
+  { id: "t11", name: "SPM/IVR Pull", color: "#0ea5e9", dur: 30 },
+  { id: "t12", name: "Delivery", color: "#dc2626", dur: 60 },
 ];
 
 const INIT_ROLES = [
-  { id: "r1", name: "Pharmacist 1" },
-  { id: "r2", name: "Pharmacist 2" },
-  { id: "r3", name: "Tech 1 – Dispensing" },
-  { id: "r4", name: "Tech 2 – IV Room" },
-  { id: "r5", name: "Tech 3 – Pyxis" },
-  { id: "r6", name: "Tech 4 – Triage" },
+  { id: "r1", name: "Carousel 1 Tx" },
+  { id: "r2", name: "Carousel 2 Tx" },
+  { id: "r3", name: "Carousel 3 Tx" },
+  { id: "r4", name: "Carousel 4 Tx" },
+  { id: "r5", name: "Carousel 5 Tx" },
+  { id: "r6", name: "Triage Tx" },
+  { id: "r7", name: "Delivery Tx" },
 ];
 
 const JUMPS = [0, 3, 6, 9, 12, 15, 18, 21];
