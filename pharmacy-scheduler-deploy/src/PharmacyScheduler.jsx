@@ -4,7 +4,7 @@ import * as XLSX from "xlsx";
 /* ═══════════════════════════════════════════════════════════════════════════
    CONSTANTS
    ═══════════════════════════════════════════════════════════════════════════ */
-const PX_PER_HOUR = 90;
+const PX_PER_HOUR = 120;
 const LANE_H = 40;
 const ROW_PAD = 6;
 const MIN_ROW_H = LANE_H + ROW_PAD * 2;
@@ -37,6 +37,7 @@ const fmtDur = (m) => {
   if (m < 60) return `${m}m`;
   const h = Math.floor(m / 60);
   const r = m % 60;
+  return r ? `${h}h ${r}m` : `${h}h`;
 };
 
 let _uid = 0;
@@ -802,7 +803,7 @@ export default function PharmacyScheduler() {
                   {ticks.map(({ m, isHour }) => (
                     <div key={m} style={{ position: "absolute", left: minToPx(m), bottom: 0, display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
                       <span style={{ fontSize: isHour ? 12 : 10, fontWeight: isHour ? 600 : 400, color: isHour ? "#475569" : "#b0b8c4", paddingLeft: 4, paddingBottom: 5, whiteSpace: "nowrap", userSelect: "none" }}>
-                        {fmtTime(m)}
+
                       </span>
                       <div style={{ width: 1, height: isHour ? 8 : 4, background: isHour ? "#94a3b8" : "#cbd5e1" }} />
                     </div>
