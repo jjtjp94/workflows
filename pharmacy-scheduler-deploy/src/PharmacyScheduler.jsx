@@ -536,7 +536,7 @@ export default function PharmacyScheduler() {
     setTasks([]);
     setScenarios([{ id: "s1", name: "Default", tasks: [] }]);
     setActiveSc("s1");
-    setScale(60);
+    setScale(15);
     setShowResetConfirm(false);
     await clearStorage();
   };
