@@ -241,7 +241,7 @@ export default function PharmacyScheduler() {
   const [types, setTypes] = useState(INIT_TYPES);
   const [roles, setRoles] = useState(INIT_ROLES);
   const [tasks, setTasks] = useState([]);
-  const [scale, setScale] = useState(60);
+  const [scale, setScale] = useState(15);
   const [scenarios, setScenarios] = useState([{ id: "s1", name: "Default", tasks: [] }]);
   const [activeSc, setActiveSc] = useState("s1");
   const [editScId, setEditScId] = useState(null);
