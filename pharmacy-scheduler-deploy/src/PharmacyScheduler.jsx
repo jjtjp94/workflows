@@ -31,13 +31,9 @@ const fmtTimeFull = (m) => {
   const mm = Math.floor(m % 60);
   const ap = h >= 12 ? "PM" : "AM";
   const h12 = h === 0 ? 12 : h > 12 ? h - 12 : h;
+  return `${h12}:${String(mm).padStart(2, "0")} ${ap}`;
 };
-const fmtDur = (m) => {
-  if (m < 60) return `${m}m`;
-  const h = Math.floor(m / 60);
-  const r = m % 60;
-  return r ? `${h}h ${r}m` : `${h}h`;
-};
+
 
 let _uid = 0;
 const uid = () => `_${++_uid}_${Date.now().toString(36)}`;
